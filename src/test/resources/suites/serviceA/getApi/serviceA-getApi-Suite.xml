@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" data-provider-thread-count="10">
+	<test name="ServiceA - GetAPI" >
+		<classes>
+			<class name="com.luke.testing.serviceA.getApi.SampleTest" />
+		</classes>
+	</test>
+</suite>
