@@ -7,6 +7,7 @@ public class SampleReader extends AbstractDataReader {
 	
 	private String description;
 	private String testMethod;
+	private String result;
 	
 	public String getDescription() {
 		return description;
@@ -19,5 +20,11 @@ public class SampleReader extends AbstractDataReader {
 	}
 	public void setTestMethod(String testMethod) {
 		this.testMethod = testMethod;
+	}
+	public String getResult() {
+		return result;
+	}
+	public void setResult(String result) {
+		this.result = result;
 	}
 }

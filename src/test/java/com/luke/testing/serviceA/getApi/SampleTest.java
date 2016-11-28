@@ -40,15 +40,15 @@ public class SampleTest extends AbstractTest {
 	}
 	
 	
-	@DataProvider(name="testMethod2Provider", parallel=true)
-	public Iterator<Object[]> getParallelDataReader() {
-		return testingContext.get("testMethod2").getDataReader();
-	}
-	
-	@Test(dataProvider="testMethod2Provider")
-	public void testMethod2(SampleReader dro) {
-		System.out.println(dro.toString());
-	}
+//	@DataProvider(name="testMethod2Provider", parallel=true)
+//	public Iterator<Object[]> getParallelDataReader() {
+//		return testingContext.get("testMethod2").getDataReader();
+//	}
+//	
+//	@Test(dataProvider="testMethod2Provider")
+//	public void testMethod2(SampleReader dro) {
+//		System.out.println(dro.toString());
+//	}
 	
 	
 	@AfterClass
