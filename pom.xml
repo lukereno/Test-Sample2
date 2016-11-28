@@ -43,6 +43,12 @@
 			<artifactId>Test-Infra-DataProviders</artifactId>
 			<version>${testinfra.version}</version>
 		</dependency>
+		
+		<dependency>
+			<groupId>com.luke.infra</groupId>
+			<artifactId>Test-Infra-Common</artifactId>
+			<version>${testinfra.version}</version>
+		</dependency>
 
 	</dependencies>
 </project>

@@ -7,6 +7,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.luke.infra.http.HttpClient;
+import com.luke.infra.utils.PrettyPrint;
 import com.luke.testing.AbstractTest;
 import com.luke.testing.datareader.serviceA.getApi.SampleReader;
 
@@ -32,6 +34,9 @@ public class SampleTest extends AbstractTest {
 	@Test(dataProvider="testMethod1Provider")
 	public void testMethod1(SampleReader dro) {
 		System.out.println(dro.toString());
+		String jsonString = HttpClient.getRequest();
+		PrettyPrint.jsonPrettyPrint(jsonString);
+		
 		//prepare request
 		//send request (to api)
 		//validate response
